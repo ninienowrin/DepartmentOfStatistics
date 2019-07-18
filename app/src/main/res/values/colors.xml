@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="drawer_toggle_color">#fff</color>
+    <color name="icons">#424242</color>
+    <color name="blue">#0277BD</color>
+    <color name="blue2">#0085B2</color>
+</resources>

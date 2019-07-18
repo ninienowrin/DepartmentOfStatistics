@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/departmentMenu" android:title="Department Info" android:icon="@drawable/ic_department"/>
+    <item android:id="@+id/facultyMenu" android:title="Faculty" android:icon="@drawable/ic_faculty"/>
+    <item android:id="@+id/courseMenu" android:title="Courses" android:icon="@drawable/ic_courses"/>
+    <item android:id="@+id/cgpaMenu" android:title="CGPA Calculator" android:icon="@drawable/ic_cgpa"/>
+    <item android:id="@+id/stuffMenu" android:title="Stuff" android:icon="@drawable/ic_stuff"/>
+    <item android:id="@+id/webMenu" android:title="Web" android:icon="@drawable/ic_web"/>
+    <item android:id="@+id/about" android:title="About" android:icon="@drawable/ic_about"/>
+</menu>
