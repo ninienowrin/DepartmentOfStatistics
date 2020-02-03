@@ -57,12 +57,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String tag = tappedView.getTag().toString();
         Log.i("clicked on", tag);
 
+        if(tag.equals("info")){
+            myIntent = new Intent(this, InfoActivity.class);
+            startActivity(myIntent);
+        }
+
         if(tag.equals("faculty")){
             myIntent = new Intent(this, FacultyActivity.class);
             startActivity(myIntent);
         }
         if(tag.equals("course")){
-            myIntent = new Intent(this, CourseActivity.class);
+            myIntent = new Intent(this, SessionActivity.class);
             startActivity(myIntent);
         }
         if(tag.equals("web")){
@@ -97,8 +102,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        // Handle navigation view item clicks here.
+        // Handle navigation view item clicks.
         switch (item.getItemId()) {
+
+            case R.id.departmentMenu:{
+
+                myIntent = new Intent(this, InfoActivity.class);
+                startActivity(myIntent);
+                break;
+            }
 
             case R.id.facultyMenu: {
                 myIntent = new Intent(this, FacultyActivity.class);
@@ -106,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             }
             case R.id.courseMenu: {
-                myIntent = new Intent(this, CourseActivity.class);
+                myIntent = new Intent(this, SessionActivity.class);
                 startActivity(myIntent);
                 break;
             }

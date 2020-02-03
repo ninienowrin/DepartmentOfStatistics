@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SessionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sessionToolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Session">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sessionToolbar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sesson14"
+            style="@style/sessiontitle"
+            android:layout_height="50dp"
+            android:text="2014-15"
+            android:onClick="changeActivity"
+            android:tag="session14"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sesson15"
+            style="@style/sessiontitle"
+            android:layout_height="50dp"
+            android:text="2015-16"
+            android:onClick="changeActivity"
+            android:tag="session15"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sesson16"
+            style="@style/sessiontitle"
+            android:layout_height="50dp"
+            android:text="2016-17"
+            android:onClick="changeActivity"
+            android:tag="session16"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sesson17"
+            style="@style/sessiontitle"
+            android:layout_height="50dp"
+            android:text="2017-18"
+            android:tag="session17"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sesson18"
+            style="@style/sessiontitle"
+            android:layout_height="50dp"
+            android:text="2018-19"
+            android:onClick="changeActivity"
+            android:tag="session18"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

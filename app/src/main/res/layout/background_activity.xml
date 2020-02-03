@@ -57,6 +57,8 @@
 
                 <LinearLayout
                     style="@style/cardlayout"
+                    android:tag="info"
+                    android:onClick="changeActivity"
 
                     >
 
@@ -124,7 +126,7 @@
                             android:src="@drawable/ic_courses"/>
                         <TextView
                             style="@style/cardtext"
-                            android:text="Courses"
+                            android:text="Syllabus"
                             />
 
                     </LinearLayout>
@@ -172,7 +174,7 @@
                             android:src="@drawable/ic_stuff" />
                         <TextView
                             style="@style/cardtext"
-                            android:text="Stuff Members"
+                            android:text="Staff Members"
                             />
 
                     </LinearLayout>

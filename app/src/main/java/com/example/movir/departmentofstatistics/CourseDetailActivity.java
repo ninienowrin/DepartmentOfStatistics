@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.util.Log;
 import android.widget.TextView;
 
 public class CourseDetailActivity extends AppCompatActivity {
@@ -32,13 +34,42 @@ public class CourseDetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra("MESSAGE");
         int position = intent.getIntExtra("POSITION",58);
-        codeText.setText(CourseActivity.courseCode[position]);
-        crediText.setText(CourseActivity.courseCredit[position].toString());
+        String tappedSession = intent.getStringExtra("SESSION");
 
-        contentText.setText(DetailsText.contents[position]);
-        booksRecommended.setText(DetailsText.booksRecommended[position]);
-//        referenceBooks.setText(DetailsText.referenceBooks[position]);
         messageText.setText(message);
+
+        if (tappedSession.equals("session15")){
+            codeText.setText(Syllabus.Session15.courseCode[position]);
+            crediText.setText(Syllabus.Session15.courseCredit[position].toString());
+
+            contentText.setText(Html.fromHtml(DetailsText.contents[position]));
+            booksRecommended.setText(DetailsText.booksRecommended[position]);
+        }
+        if (tappedSession.equals("session14")){
+            codeText.setText(Syllabus.Session14.courseCode[position]);
+            crediText.setText(Syllabus.Session14.courseCredit[position].toString());
+
+
+        }
+        if (tappedSession.equals("session18")){
+            codeText.setText(Syllabus.Session18.courseCode[position]);
+            crediText.setText(Syllabus.Session18.courseCredit[position].toString());
+
+        }
+
+        if (tappedSession.equals("session16")){
+            codeText.setText(Syllabus.Session16.courseCode[position]);
+            crediText.setText(Syllabus.Session16.courseCredit[position].toString());
+
+        }
+
+
+//        codeText.setText(Syllabus.Session15.courseCode[position]);
+//        crediText.setText(Syllabus.Session15.courseCredit[position].toString());
+//
+//        contentText.setText(DetailsText.contents[position]);
+//        booksRecommended.setText(DetailsText.booksRecommended[position]);
+
 
 
     }

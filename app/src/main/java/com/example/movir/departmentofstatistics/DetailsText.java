@@ -4,11 +4,38 @@ import android.text.Html;
 
 public class DetailsText {
 
-    static String[] contents = {"Sets and their Properties: Random experiment, Sample Space, events, union and intersection of events, different types of events, probability of events, axiomatic development of probability, computation of probability.\n" +
-            "Theorems of total and compound probability, conditional probability, independence of events, dependent and independent of trials, Bayes theorem, realization of m among n events, solving probability problems.\n" +
-            "Mathematical Expectation: Expectation and variance of sum and product, conditional expectation and conditional variance, covariance and correlation, Chebyshev's and Markov inequalities.\n" +
-            "Solving problems using Binomial. Poisson, Exponential, Normal, Negative Binomial and Multinomial distribution.\n" +
-            "Law of large numbers: Weak and strong law.\n",
+
+
+
+
+
+    static class session15 {
+        static String[] contents ={"<p>Sets and their Properties: Random experiment, Sample Space, events, union and intersection of events, different types of events, probability of events, axiomatic development of probability, computation of probability.</p>\n" +
+                "<p>Theorems of total and compound probability, conditional probability, independence of events, dependent and independent of trials, Bayes theorem, realization of m among n events, solving probability problems.</p>\n" +
+                "<p>Mathematical Expectation: Expectation and variance of sum and product, conditional expectation and conditional variance, covariance and correlation, Chebyshev's and Markov inequalities.</p>\n" +
+                "<p>Solving problems using Binomial. Poisson, Exponential, Normal, Negative Binomial and Multinomial distribution.</p>\n" +
+                "<p>Law of large numbers: Weak and strong law.</p>\n" +
+                "<p><strong>Books Recommended:</strong></p>\n" +
+                "<ol style=\"list-style-type: lower-alpha;\">\n" +
+                "<li>Ross S M, A First Course in Probabilty, 9<sup>th</sup> Ed, Academic Press, NY</li>\n" +
+                "</ol>\n" +
+                "<p><strong>Reference Books:</strong></p>\n" +
+                "<ol style=\"list-style-type: upper-roman;\">\n" +
+                "<li>Meyer A, Probability and Statistics, Addison-Wesley, USA</li>\n" +
+                "<li>Feller W, Introduction to Probabilty Theory and its Applications, Vol-1, 3<sup>rd</sup> Ed, John Wiley, NY</li>\n" +
+                "<li>Mood, Graybrill &amp; Boes, Introduction to Theory of Statistics, 3<sup>rd</sup> Ed, McGraw Hill, NY</li>\n" +
+                "<li>Mosteller, Rourke &amp; Thomas, Probability with Statisticsl Applications, 2<sup>nd</sup> Ed, Addison-Wesely, USA</li>\n" +
+                "<li>Parzen E, Modern Probability Theory and its Applications, John Wiley, NY</li>\n" +
+                "<li>Roy M K, Fundamentals of Probability and Probability Distributions, 9<sup>th</sup> Ed, ROMAX Publications, Chittagong</li>\n" +
+                "<li>Islam M N, Introduction to Statistics and Probability, 3<sup>rd</sup> Ed, Poppy Library, Dhaka</li>\n" +
+                "<li>Hoq, A K M Sirajul, Probability: An Introduction</li>\n" +
+                "</ol>" };
+
+
+
+    }
+
+    static String[] contents = {session15.contents[0],
 
             "Basic Statistics: Meaning and scope of variables and attributes, Different scales of measurement, frequency distribution, Stem and leaf analysis and graphical representation. Summarization of data: Location, dispersion and their measures, skewness, kurtosis and their measures, moments and cumulants.\n" +
                     "Probability Distribution: Study of Bernoulli, binomial, Poisson, negative binomial, geometric, hyper-geometric, multinomial, uniform, normal, exponential, gamma and beta distributions.\n" +
